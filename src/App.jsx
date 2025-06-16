@@ -7,14 +7,15 @@ import Amenities from "./components/Amenities";
 import Footer from "./components/Footer";
 
 import FounderSection from "./components/FounderSection";
-import Heroslider from "./components/HeroSlider.JSX";
+
+import Hero from "./components/Hero.jsx";
 
 const App = () => {
   return (
     <div>
       <TopContactBar />
       <Navbar />
-      <Heroslider />
+      <Hero />
       <Centers />
       <ModernWorkspaces />
       <Amenities />

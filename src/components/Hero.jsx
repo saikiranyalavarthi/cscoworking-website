@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const Heroslider = () => {
+const Hero = () => {
   const slides = [
     {
       src: "/image1.jpg", // Replace with your first image path
@@ -60,4 +60,4 @@ const Heroslider = () => {
   );
 };
 
-export default Heroslider;
+export default Hero;
