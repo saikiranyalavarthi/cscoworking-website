@@ -81,7 +81,7 @@ const Footer = () => {
               {loc.title}
             </h3>
             <p className=" text-black flex gap-2 leading-relaxed text-bold">
-              <MdLocationOn className="text-pink-700 mt-1" size={32} />
+              <MdLocationOn className="text-pink-500 mt-1" size={32} />
               {loc.address}
             </p>
           </div>
