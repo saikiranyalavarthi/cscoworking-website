@@ -5,8 +5,9 @@ import Centers from "./components/Centers";
 import ModernWorkspaces from "./components/ModernWorkspaces";
 import Amenities from "./components/Amenities";
 import Footer from "./components/Footer";
-import HeroSlider from "./components/HeroSlider.JSX";
+
 import FounderSection from "./components/FounderSection";
+import HeroSlider from "./components/HeroSlider.JSX";
 
 const App = () => {
   return (
