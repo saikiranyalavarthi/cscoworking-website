@@ -6,7 +6,6 @@ import Cabin4 from "../assets/images/Cabin4.jpg";
 import Cabin5 from "../assets/images/Cabin5.jpg";
 import Cabin6 from "../assets/images/Cabin6.jpg";
 import Cabin7 from "../assets/images/Cabin7.jpg";
-import Cabin8 from "../assets/images/Cabin6.jpg";
 
 const workspaceInfo = [
   {
@@ -50,12 +49,6 @@ const workspaceInfo = [
     image: Cabin7,
     description:
       "Designated area where six individuals or a team can work together comfortably with some privacy.",
-  },
-  {
-    title: "CONFERENCE ROOM",
-    image: Cabin8,
-    description:
-      "A professional setting for team discussions and meetings. Available for booking by members and non-members.",
   },
 ];
 
