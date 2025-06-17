@@ -1,6 +1,5 @@
 import React from "react";
-import TopContactBar from "../components/TopContactBar";
-import Navbar from "../components/Navbar";
+
 import Centers from "../components/Centers";
 import ModernWorkspaces from "../components/ModernWorkspaces";
 

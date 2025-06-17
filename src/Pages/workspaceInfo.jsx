@@ -1,11 +1,11 @@
 import React from "react";
-import Cabin1 from "../assets/images/Cabin1.jpg";
-import Cabin2 from "../assets/images/Cabin2.jpg";
-import Cabin3 from "../assets/images/Cabin3.jpg";
-import Cabin4 from "../assets/images/Cabin4.jpg";
-import Cabin5 from "../assets/images/Cabin5.jpg";
-import Cabin6 from "../assets/images/Cabin6.jpg";
-import Cabin7 from "../assets/images/Cabin7.jpg";
+import Cabin1 from "../assets/images/cabin1.jpg";
+import Cabin2 from "../assets/images/cabin2.jpg";
+import Cabin3 from "../assets/images/cabin3.jpg";
+import Cabin4 from "../assets/images/cabin4.jpg";
+import Cabin5 from "../assets/images/cabin5.jpg";
+import Cabin6 from "../assets/images/cabin6.jpg";
+import Cabin7 from "../assets/images/cabin7.jpg";
 
 const workspaceInfo = [
   {
