@@ -1,27 +1,36 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import TopContactBar from "./components/TopContactBar";
-import Centers from "./components/Centers";
-import ModernWorkspaces from "./components/ModernWorkspaces";
-import Amenities from "./components/Amenities";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-import FounderSection from "./components/FounderSection";
-
-import Hero from "./components/Hero.jsx";
+import Aboutus from "./Pages/Aboutus";
+import LocationsPage from "./Pages/LocationsPage";
+import Workspaces from "./Pages/workspaceInfo";
+import ContactUs from "./Pages/ContactUs";
+import Home from "./Pages/Home";
+import Terms from "./Pages/Terms";
+import Privacy from "./Pages/Privacy";
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <TopContactBar />
       <Navbar />
-      <Hero />
-      <Centers />
-      <ModernWorkspaces />
-      <Amenities />
-      <FounderSection />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Aboutus />} />
+        <Route path="/locations" element={<LocationsPage />} />
+        <Route path="/workspaces" element={<Workspaces />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+      </Routes>
+
       <Footer />
-    </div>
+    </Router>
   );
 };
 

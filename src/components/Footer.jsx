@@ -7,6 +7,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const locations = [
   {
@@ -80,7 +81,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-blue-700 mb-2 border-b-2 border-blue-500 w-fit pb-1">
               {loc.title}
             </h3>
-            <p className=" text-black flex gap-2 leading-relaxed text-bold">
+            <p className="text-black flex gap-2 leading-relaxed">
               <MdLocationOn className="text-pink-500 mt-1" size={32} />
               {loc.address}
             </p>
@@ -93,24 +94,24 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-sm">
           {/* Nav Links */}
           <div className="flex flex-wrap justify-center gap-4 mb-3 md:mb-0 text-gray-700 font-medium">
-            <a href="#" className="hover:text-blue-700 transition">
+            <Link to="/about" className="hover:text-blue-700 transition">
               About
-            </a>
-            <a href="#" className="hover:text-blue-700 transition">
+            </Link>
+            <Link to="/contact" className="hover:text-blue-700 transition">
               Contact
-            </a>
-            <a href="#" className="hover:text-blue-700 transition">
+            </Link>
+            <Link to="/locations" className="hover:text-blue-700 transition">
               Locations
-            </a>
-            <a href="#" className="hover:text-blue-700 transition">
+            </Link>
+            <Link to="/workspaces" className="hover:text-blue-700 transition">
               Workspaces
-            </a>
-            <a href="#" className="hover:text-blue-700 transition">
+            </Link>
+            <Link to="/terms" className="hover:text-blue-700 transition">
               Terms
-            </a>
-            <a href="#" className="hover:text-blue-700 transition">
+            </Link>
+            <Link to="/privacy" className="hover:text-blue-700 transition">
               Privacy
-            </a>
+            </Link>
           </div>
 
           {/* Copyright */}

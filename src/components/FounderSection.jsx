@@ -7,6 +7,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import founderImg from "../assets/Founder.jpg"; // Adjust the path
+import { Link } from "react-router-dom";
 
 const FounderSection = () => {
   return (
@@ -102,9 +103,11 @@ const FounderSection = () => {
 
         {/* Button */}
         <div className="mt-8">
-          <button className="bg-blue-700 hover:bg-blue-900 text-white font-medium py-2 px-6 rounded-full transition">
-            Meet Our Team
-          </button>
+          <Link to="/contact">
+            <button className="bg-blue-700 hover:bg-blue-900 text-white font-medium py-2 px-6 rounded-full transition">
+              Meet Our Team
+            </button>
+          </Link>
         </div>
       </motion.div>
     </section>
