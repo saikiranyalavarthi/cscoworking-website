@@ -4,12 +4,12 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const Hero = () => {
   const slides = [
     {
-      src: "/image1.jpg", // Replace with your first image path
-      alt: "Coworking space image 1",
+      src: "/video1.mp4", // Replace with your first video path
+      type: "video/mp4",
     },
     {
-      src: "/image2.jpg", // Replace with your second image path
-      alt: "Coworking space image 2",
+      src: "/video2.mp4", // Replace with your second video path
+      type: "video/mp4",
     },
   ];
 
@@ -22,16 +22,21 @@ const Hero = () => {
     setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
 
   return (
-    <section className="relative w-full h-[500px] bg-black text-white overflow-hidden">
-      {/* Slide */}
-      <img
+    <section className="relative w-full h-[500px] overflow-hidden">
+      {/* Video Background */}
+      <video
+        key={slides[currentIndex].src}
         src={slides[currentIndex].src}
-        alt={slides[currentIndex].alt}
-        className="absolute inset-0 w-full h-full object-cover opacity-70"
+        type={slides[currentIndex].type}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center flex-col text-center p-6">
+      <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center flex-col text-center p-6 text-white z-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           WELCOME TO <br />{" "}
           <span className="text-blue-400">CS CO WORKING SPACES</span>
@@ -43,16 +48,16 @@ const Hero = () => {
         </p>
       </div>
 
-      {/* Arrows */}
+      {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-3 rounded-full hover:bg-black transition"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 text-white bg-black/50 p-3 rounded-full hover:bg-black transition"
       >
         <FaArrowLeft />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-3 rounded-full hover:bg-black transition"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 text-white bg-black/50 p-3 rounded-full hover:bg-black transition"
       >
         <FaArrowRight />
       </button>
